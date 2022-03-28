@@ -1,18 +1,47 @@
-# This is a sample Python script.
+# 1. Практическое задание
+q = ["spisok",5.45,7]
+print(q)
+print(type(q))
+for el in q:
+    print(type(el))
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# 2. Практическое задание
+q.append("tur")
+print(q)
+q[0],q[1] = q[1],q[0]
+print(q)
+q[2],q[3] = q[3],q[2]
+print(q)
+
+# 3. Практическое задание
+periud = [1,2,3,4,5,6,7,8,9,10,11,12]
+print(periud)
+a = periud[0:3]
+b = periud[3:6]
+c = periud[6:9]
+d = periud[9:12]
+a = "зима"
+b = "весна"
+c = "лето"
+d = "осень"
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+r = int(input("введите месяц: "))
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+if r < 4:
+    print(a)
+elif r > 3 and r < 7:
+    print(b)
+elif r > 6 and r <10:
+    print(c)
+else:
+    print(d)
+# 4. Практическое задание
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
-x = 5
-print(x)
+
+
+
+
+
+
